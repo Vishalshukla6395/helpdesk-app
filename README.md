@@ -25,28 +25,28 @@ git clone https://github.com/your-username/helpdesk-app.git
 cd helpdesk-app
 
 # Install Dependencies
-cd frontend
+cd client
 npm install
-cd ../backend
+cd ../server
 npm install
 
 # Configure Environment Variables
 
-# Frontend (.env)
+# client (.env)
 VITE_API_URL=http://localhost:5000/api
 
-# Backend (.env)
+# server (.env)
 PORT=5000
 MONGO_URI=your-mongodb-uri
 JWT_SECRET=your-secret-key
 
 # Run the Application
-# Backend
-cd backend
-npm run dev
+# server
+cd server
+node index.js
 
 # Frontend
-cd ../frontend
+cd ../client
 npm run dev
 ```
 
